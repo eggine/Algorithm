@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0171631A-83E3-4BAC-AAC8-AE28ECA540B7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>BinSearch</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Pro\Dev\include;D:\Pro\Hummer3D\EGGINE\Basis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Hummer3D\EGGINE\Basis\CvtUtil.cpp" />
+    <ClCompile Include="..\..\Hummer3D\EGGINE\Basis\Log.cpp" />
+    <ClCompile Include="..\..\Hummer3D\EGGINE\Basis\LogManager.cpp" />
+    <ClCompile Include="..\..\Hummer3D\EGGINE\Basis\MathUtil.cpp" />
+    <ClCompile Include="..\..\Hummer3D\EGGINE\Basis\StrUtil.cpp" />
+    <ClCompile Include="..\..\Hummer3D\EGGINE\Basis\tinyxml2.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Hummer3D\EGGINE\Basis\Array.h" />
+    <ClInclude Include="..\..\Hummer3D\EGGINE\Basis\Array2D.h" />
+    <ClInclude Include="..\..\Hummer3D\EGGINE\Basis\ByteBuffer.h" />
+    <ClInclude Include="..\..\Hummer3D\EGGINE\Basis\CvtUtil.h" />
+    <ClInclude Include="..\..\Hummer3D\EGGINE\Basis\FileStream.h" />
+    <ClInclude Include="..\..\Hummer3D\EGGINE\Basis\FileURL.h" />
+    <ClInclude Include="..\..\Hummer3D\EGGINE\Basis\Log.h" />
+    <ClInclude Include="..\..\Hummer3D\EGGINE\Basis\LogManager.h" />
+    <ClInclude Include="..\..\hummer3d\eggine\basis\MathUtil.h" />
+    <ClInclude Include="..\..\Hummer3D\EGGINE\Basis\MemoryStream.h" />
+    <ClInclude Include="..\..\Hummer3D\EGGINE\Basis\Random.h" />
+    <ClInclude Include="..\..\Hummer3D\EGGINE\Basis\Singleton.h" />
+    <ClInclude Include="..\..\Hummer3D\EGGINE\Basis\StdHeader.h" />
+    <ClInclude Include="..\..\Hummer3D\EGGINE\Basis\StrUtil.h" />
+    <ClInclude Include="..\..\Hummer3D\EGGINE\Basis\Timer.h" />
+    <ClInclude Include="..\..\Hummer3D\EGGINE\Basis\tinyxml2.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
